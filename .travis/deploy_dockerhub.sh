@@ -6,4 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t gbeq/novo-python-cicd-buzz:$TAG .
-docker push gbeq/novo-python-cicd-buzz
+docker push $DOCKER_USER/$REPO_NAME
